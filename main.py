@@ -1,18 +1,14 @@
 import math
 import tkinter as Tk
-import sys
-import os
-
-# Add the directory containing the buttons module to the system path
-sys.path.append(os.path.dirname(buttons.py))
-
+from buttons import Calculator
 
 
 root = Tk.Tk() 
 root.title("Calculator")
-root.geometry("400x600")
+root.geometry("420x600")
 
 
+calc = Calculator(root)
 
 root.mainloop()
     
